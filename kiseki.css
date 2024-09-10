@@ -1,0 +1,146 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'tf2build';
+  src: url('tf2build.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'tf2secondary';
+    src: url('tf2secondary-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url('testimage.png');
+    background-size: 100% auto;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    /* position: relative; */
+    font-family: tf2build;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0 to 1) */
+    z-index: -1;
+    /* overflow: hidden; */
+  }
+
+.btn {
+  margin-top: 10px;
+  margin-right: 10px; 
+  color: #fff; /* Text color */
+  box-shadow: 
+  /* 0 0 5px #fff,  */
+  /* 0 0 10px #fff,  */
+  0 0 5px #fff;
+}
+
+h1, h4, h6 {
+    text-align: center;
+    font-size: 600%;
+    padding-top: 25%;
+    color: #fff; /* Text color */
+    text-shadow: 
+    /* 0 0 5px #fff,  */
+    /* 0 0 10px #fff,  */
+    0 0 15px #fff; 
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+}
+
+h4 {
+  font-size: 200%;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+h6 {
+  font-size: 100%;
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+body h2 {
+  margin-top: 15px;
+}
+
+.amongus{
+    z-index: 999;
+    text-align: right;
+}
+
+.blurbs {
+  text-align: center;
+}
+
+.blurbs h2 {
+  font-size: 35px;
+}
+
+#container {
+  align-items: center;
+  width: 100%; /* Set the width to 100% */
+    max-width: 1200px; /* Set a maximum width to prevent container from becoming too wide */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 15px; /* Add some padding to the left and right sides */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid black; /* Add a 2px solid black border */
+    background-color: #fffdf7;
+}
+
+p {
+  font-family: tf2secondary;
+}
+
+#fancifulacpt {
+  grid-column: span 1;
+}
+
+#wrapper2 {
+  margin: 24px auto;
+  width: 90%;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  border-radius: 20px;
+}
+
+.carousel {
+  color: #170724;
+  --carousel-button-bg: #fff;
+  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
+          0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+  --carousel-slide-width: 24%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.carousel.carousel__slide {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+}
